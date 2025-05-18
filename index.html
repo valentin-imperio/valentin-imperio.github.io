@@ -1,133 +1,65 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Valentín Imperio</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <style>
-    #banner {
-      background-image: url('images/gettyimages-1881463443-640x640.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
-  </style>
-</head>
-<body class="homepage is-preload">
-  <div id="page-wrapper">
+<!-- Logo -->
+<h1><a href="index.html">Acerca de mí</a></h1>
 
-    <!-- Header -->
-    <section id="header">
-      <!-- Logo -->
-      <h1><a href="index.html">Acerca de mí</a></h1>
+<!-- Nav -->
+<nav id="nav">
+  <ul>
+    <li class="current"><a href="index.html">Home</a></li>
+    <li>
+      <a href="Portafolio.html">Portafolio</a>
+      <ul>
+        <li><a href="projects/EV_Trucks.html">Impact of Electric HD Vehicles</a></li>
+        <li><a href="../projects/FAA_Data.html">ML-based Model for Airfield Pavements</a></li>
+        <li><a href="../projects/MS_Thesis.html">Impact of DWL on Flexible Pavements</a></li>
+      </ul>
+    </li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-      <!-- Nav -->
-      <nav id="nav">
-        <ul>
-          <li class="current"><a href="index.html">Inicio</a></li>
-          <li><a href="Projects.html">Portafolio</a></li>
-          <li><a href="Contact.html">Contacto</a></li>
-        </ul>
-      </nav>
+<!-- Banner con nueva imagen de fondo -->
+<section id="banner" style="background-image: url('images/gettyimages-1881463443-640x640.jpg')">
+  <header>
+    <!-- Contenido del banner -->
+  </header>
+</section>
 
-      <!-- Banner con fondo personalizado -->
-      <section id="banner">
-        <header>
-          <h2>Valentín Imperio</h2>
-        </header>
-      </section>
-
-      <!-- Intro con botones -->
-      <section id="intro" class="container">
-        <br>
-        <footer>
-          <ul class="actions">
-            <li><a href="Projects.html" class="button alt large">Portafolio</a></li>
+<!-- Footer modificado -->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 col-12-medium">
+        <section>
+          <header>
+            <h2>Content</h2>
+          </header>
+          <ul class="divided">
+            <li><a href="Portafolio.html">Portafolio</a></li>
+            <li><a href="Contact.html">Contact</a></li>
           </ul>
-        </footer>
-      </section>
-    </section>
-
-    <!-- Main Section -->
-    <section id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <!-- Portafolio -->
-            <section>
-              <header class="major">
-                <h2>Portafolio</h2>
-              </header>
-              <!-- Aquí podrías dejar los proyectos existentes o modificarlos -->
-            </section>
-          </div>
-        </div>
+        </section>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 col-6-medium col-12-small">
-            <section>
-              <header>
-                <h2>Contenido</h2>
-              </header>
-              <ul class="divided">
-                <li><a href="Projects.html">Portafolio</a></li>
-                <li><a href="Contact.html">Contacto</a></li>
-              </ul>
-            </section>
-          </div>
-
-          <div class="col-4 col-12-medium">
-            <section>
-              <header>
-                <h2>Conectemos:</h2>
-              </header>
-              <ul class="social">
-                <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/valentin-imperio/"><span class="label">LinkedIn</span></a></li>
-                <li><a class="icon brands fa-github" href="https://github.com/valentin-imperio"><span class="label">GitHub</span></a></li>
-              </ul>
-              <ul class="contact">
-                <li>
-                  <h3>Mail</h3>
-                  <p><a href="#">valentinimperio@gmail.com</a></p>
-                </li>
-                <li>
-                  <h3>Teléfono</h3>
-                  <p>+54 11 6170-1875</p>
-                </li>
-              </ul>
-            </section>
-          </div>
-
-          <div class="col-12">
-            <!-- Copyright -->
-            <div id="copyright">
-              <ul class="links">
-                <li>&copy; 2025 Valentín Imperio. Todos los derechos reservados.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="col-4 col-12-medium">
+        <section>
+          <header>
+            <h2>Connect with me:</h2>
+          </header>
+          <ul class="social">
+            <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/valentin-imperio/"><span class="label">LinkedIn</span></a></li>
+            <li><a class="icon brands fa-github" href="https://github.com/valentin-imperio"><span class="label">GitHub</span></a></li>
+          </ul>
+          <ul class="contact">
+            <li>
+              <h3>Mail</h3>
+              <p><a href="#">valentinimperio@gmail.com</a></p>
+            </li>
+            <li>
+              <h3>Telefono</h3>
+              <p>+54 11 6170-1875</p>
+            </li>
+          </ul>
+        </section>
       </div>
-    </section>
+    </div>
   </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.dropotron.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+</section>
