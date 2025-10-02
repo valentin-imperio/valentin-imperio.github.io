@@ -74,6 +74,25 @@ button, .button, .actions a, nav ul li a, h3 {
     line-height: 1.3em;
   }
 }
+
+/* Ajustar texto largo en menú y submenús */
+nav ul li a {
+  white-space: normal !important;
+  word-break: break-word;
+  text-align: center;
+  line-height: 1.4em;
+  padding: 8px 10px;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  nav ul li a {
+    font-size: 12px;
+    line-height: 1.3em;
+    padding: 6px;
+  }
+}
+
 </style>
 
 </head>
@@ -248,5 +267,18 @@ button, .button, .actions a, nav ul li a, h3 {
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const langLinks = document.querySelectorAll(".language-switcher a");
+    langLinks.forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        window.location.href = this.getAttribute("href");
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
