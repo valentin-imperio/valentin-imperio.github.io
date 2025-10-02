@@ -28,6 +28,23 @@
 .language-switcher a:hover {
   text-decoration: underline;
 }
+
+
+/* 🔹 Igualar altura de las tarjetas del portafolio */
+#main .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main .row > .col-4 {
+  display: flex;
+}
+
+#main .box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 </style>
 
 </head>
@@ -82,12 +99,49 @@
 
             <!-- Portfolio -->
             <section>
+            
+            <header class="major">
+              <h2>Personal Overview</h2>
+            </header>
+
+ <section class="box" style="background: rgba(255, 255, 255, 0.65); border-radius: 12px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <p style="text-align: justify;">
+    I am a Python developer specialized in data analysis, A.I., and Power BI reporting. 
+    I stand out for my critical thinking, responsibility, and empathy. 
+    I enjoy automating processes to increase time efficiency and reduce human errors.
+  </p>
+
+  <h3>Soft Skills:</h3>
+  <ul>
+    <li>Creative Thinking</li>
+    <li>Fast Learner</li>
+    <li>Responsibility</li>
+    <li>Teamwork</li>
+  </ul>
+
+  <h3>Hard Skills:</h3>
+  <ul>
+    <li>Python (Pandas, Sklearn, PyTorch, TensorFlow, Matplotlib, Seaborn, Numpy)</li>
+    <li>R</li>
+    <li>Excel</li>
+    <li>Power BI</li>
+    <li>Visual Basic.NET</li>
+    <li>HTML5 and CSS</li>
+    <li>Github</li>
+    <li>SQL and SQL ORM</li>
+    <li>Google Cloud</li>
+  </ul>
+
+  <h3>Languages:</h3>
+  <p>Advanced English proficiency (international exams First and CAE).</p>
+</section>
+
               <header class="major">
                 <h2>Portfolio</h2>
               </header>
               <div class="row">
                 <div class="col-4 col-6-medium col-12-small">
-                  <section class="box">
+                    <section class="box" style="background: rgba(255, 255, 255, 0.65); border-radius: 12px; padding: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                     <a href="projects/Project_1.html" class="image featured"><img src="images/2.jpg" alt="" /></a>
                     <header><h3 style="text-align: center">Analysis of Video Game Sales and Dashboard Insights</h3></header>
                     <p style="text-align: justify;">This report analyzes a video game sales dataset to uncover key industry trends. Using Excel data visualized in Power BI,
@@ -96,7 +150,7 @@
                   </section>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
-                  <section class="box">
+                    <section class="box" style="background: rgba(255, 255, 255, 0.65); border-radius: 12px; padding: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                     <a href="projects/Project_2.html" class="image featured"><img src="images/3.jpg" alt="" /></a>
                     <header><h3 style="text-align: center;">Infant Mortality, Life Expectancy, and Population Analysis</h3></header>
                     <p style="text-align: justify;">The project focuses on analyzing global health data to identify disparities in infant mortality, correlations with life expectancy, population
@@ -105,7 +159,7 @@
                   </section>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
-                  <section class="box">
+                    <section class="box" style="background: rgba(255, 255, 255, 0.65); border-radius: 12px; padding: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                     <a href="projects/Project_3.html" class="image featured"><img src="images/4.jpg" alt="" /></a>
                     <header><h3 style="text-align: center;">Toman Bike Share Dashboard Development Report</h3></header>
                     <p style="text-align: justify;">A detailed report about the development and insights derived from the creation Toman Bike Share dashboard. The dashboard

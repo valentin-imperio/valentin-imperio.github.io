@@ -28,6 +28,22 @@
 .language-switcher a:hover {
   text-decoration: underline;
 }
+
+/* 🔹 Igualar altura de las tarjetas del portafolio */
+#main .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main .row > .col-4 {
+  display: flex;
+}
+
+#main .box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 </style>
 
 </head>
@@ -82,36 +98,74 @@
 
             <!-- Portfolio -->
             <section>
+            
+                <header class="major">
+                  <h2>Quien soy</h2>
+                </header>
+            
+            <section class="box" style="background: rgba(255, 255, 255, 0.65); border-radius: 12px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+  <p style="text-align: justify;">
+    Soy un desarrollador de Python especializado en el análisis de datos, I.A. y confección de reportes en Power BI. 
+    Me destaco por tener pensamiento crítico, ser responsable y empático. 
+    Me gusta automatizar procesos para aumentar la eficiencia de tiempos y mitigar errores humanos.
+  </p>
+
+  <h3>Soft Skills:</h3>
+  <ul>
+    <li>Pensamiento Creativo</li>
+    <li>Rápido Aprendizaje</li>
+    <li>Responsabilidad</li>
+    <li>Trabajo en equipo</li>
+  </ul>
+
+  <h3>Hard Skills:</h3>
+  <ul>
+    <li>Python (Pandas, Sklearn, PyTorch, TensorFlow, Matplotlib, Seaborn, Numpy)</li>
+    <li>R</li>
+    <li>Excel</li>
+    <li>Power BI</li>
+    <li>Visual Basic.NET</li>
+    <li>HTML5 y CSS</li>
+    <li>Github</li>
+    <li>SQL y SQL ORM</li>
+    <li>Google Cloud</li>
+  </ul>
+
+  <h3>Idiomas:</h3>
+  <p>Manejo de Inglés Avanzado (exámenes internacionales First y CAE).</p>
+</section>
+
+            
               <header class="major">
                 <h2>Portafolio</h2>
               </header>
               <div class="row">
                 <div class="col-4 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="projects/EV_Trucks.html" class="image featured"><img src="images/2.jpg" alt="" /></a>
+                  <section class="box" style="background: rgba(255, 255, 255, 0.65); border-radius: 12px; padding: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                    <a href="projects/Project_1_ES.html" class="image featured"><img src="images/2.jpg" alt="" /></a>
                     <header><h3 style="text-align: center">Análisis de ventas de videojuegos (1980-2017)</h3></header>
                     <p style="text-align: justify;">Este informe analiza un conjunto de datos de ventas de videojuegos para descubrir las tendencias clave del sector.
                      Utilizando datos de Excel visualizados en Power BI, destaca las plataformas y editores más vendidos, los patrones de ventas regionales y la dinámica
                      general del mercado para fundamentar decisiones estratégicas.</p>
-                    <footer><ul class="actions"><li><a href="projects/Project_1_ES.html" class="button icon solid fa-file-alt">Read More</a></li></ul></footer>
+                    <footer><ul class="actions"><li><a href="projects/Project_1_ES.html" class="button icon solid fa-file-alt">Leer Más</a></li></ul></footer>
                   </section>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="projects/FAA_Data.html" class="image featured"><img src="images/3.jpg" alt="" /></a>
+                  <section class="box" style="background: rgba(255, 255, 255, 0.65); border-radius: 12px; padding: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                    <a href="projects/Project_2_ES.html" class="image featured"><img src="images/3.jpg" alt="" /></a>
                     <header><h3 style="text-align: center;">Analisis de mortalidad infantil y esperanza de vida</h3></header>
                     <p style="text-align: justify;">El proyecto se centra en el análisis de datos de salud global para identificar disparidades en la mortalidad infantil,
                     correlaciones con la esperanza de vida, patrones de distribución de la población y factores demográficos clave que influyen en los resultados de salud.</p>
-                    <footer><ul class="actions"><li><a href="projects/Project_2_ES.html" class="button icon solid fa-file-alt">Read More</a></li></ul></footer>
+                    <footer><ul class="actions"><li><a href="projects/Project_2_ES.html" class="button icon solid fa-file-alt">Leer Más</a></li></ul></footer>
                   </section>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="projects/MS_Thesis.html" class="image featured"><img src="images/4.jpg" alt="" /></a>
+                  <section class="box" style="background: rgba(255, 255, 255, 0.65); border-radius: 12px; padding: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                    <a href="projects/Project_3_ES.html" class="image featured"><img src="images/4.jpg" alt="" /></a>
                     <header><h3 style="text-align: center;">Reporte del desarrollo de Toman Bike Share Dashboard</h3></header>
                     <p style="text-align: justify;">Un informe detallado sobre el desarrollo y los conocimientos derivados de la creación del dashboard de Toman Bike Share.
                     Este panel se ha diseñado para proporcionar métricas clave de rendimiento que permitan una toma de decisiones informada.</p>
-                    <footer><ul class="actions"><li><a href="projects/Project_3_ES.html" class="button icon solid fa-file-alt">Read More</a></li></ul></footer>
+                    <footer><ul class="actions"><li><a href="projects/Project_3_ES.html" class="button icon solid fa-file-alt">Leer Más</a></li></ul></footer>
                   </section>
                 </div>
               </div>
@@ -166,3 +220,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
