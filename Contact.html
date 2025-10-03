@@ -12,29 +12,87 @@
 <link href="assets/css/main.css" rel="stylesheet"/>
 
 <style>
+
 .language-switcher {
-  position: absolute;
+  position: fixed !important;
   top: 10px;
   right: 10px;
-  z-index: 999;
+  z-index: 99999 !important;
+  background: rgba(255,255,255,0.8);
+  padding: 5px 8px;
+  border-radius: 6px;
   font-weight: bold;
   font-size: 13px;
 }
-
 .language-switcher a {
   margin-left: 5px;
   text-decoration: none;
   color: black;
 }
-
 .language-switcher a:hover {
   text-decoration: underline;
 }
+
+
+/* 🔹 Igualar altura de las tarjetas del portafolio */
+#main .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main .row > .col-4 {
+  display: flex;
+}
+
+#main .box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* 🔹 Ajustes solo en móvil */
+@media (max-width: 768px) {
+  /* Evitar banner duplicado en móviles */
+  #banner {
+    display: none;
+  }
+
+  /* Ajustar GIF en móviles */
+  #header img {
+    max-width: 95%;
+    height: auto;
+  }
+}
+
+/* Ajustar texto largo en botones y títulos */
+button, .button, .actions a, nav ul li a, h3 {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  nav ul li a {
+    font-size: 13px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 1.3em;
+  }
+}
+
+/* 🔹 Ajustes solo en móvil para el botón de proyectos */
+@media (max-width: 768px) {
+  #intro .actions .button {
+    transform: scale(0.75);   /* 25% más chico */
+    margin-top: 40px;        /* mueve el botón hacia abajo */
+  }
+}
+
 </style>
 
 </head>
 <body class="Contact is-preload">
-  <div class="language-switcher" style="position: fixed; top: 10px; right: 10px; z-index: 9999;
+  <div class="language-switcher" style="position: fixed; top: 10px; right: 10px; z-index: 9999;">
        background: rgba(255,255,255,0.8); padding: 5px 8px; border-radius: 6px;
        font-weight: bold; font-size: 13px;">
     <a href="Contact.html">ESP</a> | <a href="Contact_EN.html">ENG</a>
