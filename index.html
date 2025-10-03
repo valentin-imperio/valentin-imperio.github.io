@@ -83,60 +83,6 @@ button, .button, .actions a, nav ul li a, h3 {
   }
 }
 
-
-/* 🔹 Ajuste de textos largos en menús desplegables (solo móvil) */
-@media (max-width: 768px) {
-  nav ul li ul li a {
-    white-space: normal !important; /* permitir salto de línea */
-    word-wrap: break-word;          /* cortar si es muy largo */
-    display: block;                 /* usar todo el ancho */
-    line-height: 1.4em;             /* mejor legibilidad */
-    padding: 8px 12px;              /* espacio para evitar encimado */
-  }
-}
-
-
-/* 🔹 OVERRIDE: Forzar comportamiento correcto del submenú en móvil */
-@media (max-width: 768px) {
-  /* Hacer que el nav y sus submenús sean parte del flujo y ocupen todo el ancho */
-  nav#nav, nav#nav ul, nav#nav ul li, nav#nav ul li ul {
-    position: static !important;
-    display: block !important;
-    width: 100% !important;
-  }
-
-  /* Asegurar que cada item del submenú use todo el ancho y tenga altura automática */
-  nav#nav ul li ul {
-    background: rgba(255,255,255,0.95) !important;
-    box-shadow: none !important;
-    padding: 6px 0 !important;
-  }
-  nav#nav ul li ul li {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  /* Forzar las propiedades de los enlaces para que no se encimen */
-  nav#nav ul li ul li a {
-    white-space: normal !important;
-    word-wrap: break-word !important;
-    display: block !important;
-    height: auto !important;
-    line-height: 1.4 !important;
-    overflow: visible !important;
-    font-size: 14px !important;
-    padding: 8px 12px !important;
-    margin: 0 !important;
-  }
-
-  /* Si hay transform/translate por JS (dropotron u otro), neutralizarlo en móvil */
-  #nav .dropotron, #nav ul li ul.dropotron, #nav ul li .dropotron ul {
-    transform: none !important;
-    top: auto !important;
-    left: auto !important;
-  }
-}
-
 </style>
 
 </head>
