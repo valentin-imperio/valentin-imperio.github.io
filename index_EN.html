@@ -83,6 +83,18 @@ button, .button, .actions a, nav ul li a, h3 {
   }
 }
 
+
+/* 🔹 Ajuste de textos largos en menús desplegables (solo móvil) */
+@media (max-width: 768px) {
+  nav ul li ul li a {
+    white-space: normal !important; /* permitir salto de línea */
+    word-wrap: break-word;          /* cortar si es muy largo */
+    display: block;                 /* usar todo el ancho */
+    line-height: 1.4em;             /* mejor legibilidad */
+    padding: 8px 12px;              /* espacio para evitar encimado */
+  }
+}
+
 </style>
 
 </head>
